@@ -5,8 +5,10 @@ public class Persona {
     private int edad;
     private String genero;
 
-    public Persona(String nombre, String apellidoPaterno, String apellidoMaterno, int edad, String genero){
-        //this.id = id;
+    private int id;
+
+    public Persona(int id, String nombre, String apellidoPaterno, String apellidoMaterno, int edad, String genero){
+        this.id = id;
         this.nombre = nombre;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
@@ -55,6 +57,12 @@ public class Persona {
 
     public void setEdad(int edad){
         this.edad = edad;
+    }
+
+    public int getId() {return id;}
+
+    public void setId (int id){
+        this.id = id;
     }
 
 }
